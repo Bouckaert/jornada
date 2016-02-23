@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+harry_fan:
+  rate: 10
+  comment: i loved
+  book: teen 
+
+harry_hater:
+  rate: 1
+  comment: bullshit
+  book: teen
+
+neutro:
+  rate: 3
+  comment: Marrom
+  book: conspiracy
+

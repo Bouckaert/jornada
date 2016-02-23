@@ -1,0 +1,37 @@
+<p>
+  <strong>Title:</strong>
+  <%= @book.title %>
+</p>
+ 
+<p>
+  <strong>Autor:</strong>
+  <%= @book.author %>
+</p>
+
+<h2>Reviews</h2>
+<% @book.reviews.each do |r| %>
+  <p>
+    <strong>Nota:</strong>
+    <label id="<%=r.id%>"><%= r.rate %></label>
+  </p>
+ 
+  <p>
+    <strong>Comentario:</strong>
+    <%= r.comment %>
+  </p>
+<% end %>
+
+<h2>Avalie esse livro:</h2>
+<%= form_for([@book, @book.reviews.build]) do |f| %>
+  <p>
+    <%= f.label :rate %><br>
+    <%= f.range_field(:rate, in: 1..5) %>
+  </p>
+  <p>
+    <%= f.label :comment %><br>
+    <%= f.text_area :comment %>
+  </p>
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>

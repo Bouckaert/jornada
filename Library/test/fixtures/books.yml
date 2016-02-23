@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+teen:
+  title: Harry Potter
+  author:  J. K. Rowling
+
+conspiracy:
+  title: Cypherpunks
+  author: Julian Assange
+
+livro_sem_titulo:
+  title: 
+  author: Julian Assange
+
+livro_titulo_menor_5:
+  title: acde
+  author: abcde
